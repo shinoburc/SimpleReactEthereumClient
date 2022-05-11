@@ -6,10 +6,10 @@ import { ethers } from "ethers";
 function App() {
   const [provider, setProvider] = useState(null);
   const [counter, setCounter] = useState(null);
-  const [account, setAccount] = useState();
-  const [count, setCount] = useState();
-  const [transactionHash, setTransactionHash] = useState();
-  const [transactionInfo, setTransactionInfo] = useState();
+  const [account, setAccount] = useState(null);
+  const [count, setCount] = useState(null);
+  const [transactionHash, setTransactionHash] = useState(null);
+  const [transactionInfo, setTransactionInfo] = useState(null);
 
   // counterAddress と counterAbi は環境によって書き換える必要があります。
   // Counater.json を読み込んで利用するとよりスマート。
